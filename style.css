@@ -43,7 +43,7 @@ p {
 }
 
 .button-2 {
-	margin-top: 75px;
+	margin-top: 50px;
 	background-color: #F1F1F1;
 	display: inline-block;
 	color: #000;
@@ -67,6 +67,15 @@ p {
 	display: block;
 	text-align: center;
 	font-size: 14px;	
+}
+
+.section-footer-3 {
+	color: #FFF;
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+	padding-top: 0;
+	padding-bottom: 0;	
 }
 /* --------------FOOTER-------------- */
 
