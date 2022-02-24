@@ -1,0 +1,565 @@
+/* --------------GENERAL-------------- */
+
+* {
+	font-family: Sunflower, sans-serif;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+*::selection {
+	color: white;
+	background-color: #00AB55;
+}
+
+body {
+	background-color: #fff;
+	scroll-behavior: smooth;
+	font-size: 1.2rem;
+	line-height: 1.4em;
+}
+
+p {
+	color: #000;
+	margin-bottom: 1.6em;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+/* --------------GENERAL-------------- */
+
+/* --------------FOOTER-------------- */
+.footer {
+	display: inline-block;
+	background-color: #000;
+	color: #FFF;
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+	height: 333px;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+}
+
+.button-2 {
+	margin-top: 75px;
+	background-color: #F1F1F1;
+	display: inline-block;
+	color: #000;
+	font-size: 15px;
+	font-family: Raleway, sans-serif;
+	padding: 8px 16px;
+}
+
+.section-footer-1 {
+	padding-top: 16px !important;
+	padding-bottom: 10px !important;
+	font-size: 24px !important;
+	display: block;
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+}
+
+.section-footer-2 {
+	color: #FFF;
+	display: block;
+	text-align: center;
+	font-size: 14px;	
+}
+/* --------------FOOTER-------------- */
+
+/* --------------OTHER-------------- */
+#button {
+	color: #000;
+	text-decoration: none;
+}
+
+	#button:hover {
+	color: #B3E5FC;
+	background-color: #00B0FF;
+	text-decoration: underline;
+	}
+/* --------------OTHER-------------- */
+
+/* --------------ACCOUNT ZONE-------------- */
+.account {
+	background-color: #FFF;
+	color: #000;
+	font-size: 20px;
+	padding: 30px;
+	margin-top: 4rem;
+	border: 1px solid #30353C;
+}
+
+	.account input {
+	padding: 5px;
+	background-color: lightgrey;
+	}
+
+	.account input:focus {
+	padding: 7px;
+	background-color: lightgrey;
+	}	
+
+#myaccount {
+	color: #000;
+}
+/* --------------ACCOUNT ZONE-------------- */
+
+/* --------------CONTACT ME-------------- */
+.aboutme {
+	background-color: #E1F5FE; 
+	color: #fff;
+	padding: 50px;
+	padding-left: 120px;
+	font-size: 20px;
+	border-bottom: 1px solid #30353C;
+	border-top: 1px solid #30353C;
+	text-decoration: none;
+}
+
+	#aboutme1 {
+		font-family: Patrick Hand, sans-serif;
+		color: #29F48F;
+		padding-top: 30px;
+		padding-left: 120px;
+		padding-bottom: 0;
+		margin-top: 5rem;
+		font-size: 50px;
+		border-top: 1px solid #30353C;
+	}
+		#discordimg {
+		float: left;
+		padding-right: 20px;
+		height: 50px;
+		max-width: 100%;
+		display: inline;
+		}
+
+		#instagramimg {
+		float: left;
+		padding-right: 20px;
+		height: 50px;
+		max-width: 100%;
+		display: inline;
+		}
+
+		#twitterimg {
+		float: left;
+		padding-right: 20px;
+		height: 40px;
+		max-width: 100%;
+		display: inline;
+		}
+
+		#youtubeimg {
+		float: left;
+		padding-right: 20px;
+		height: 50px;
+		max-width: 100%;
+		display: inline;
+		}
+/* --------------CONTACT ME-------------- */
+
+/* --------------HEADER-------------- */
+nav {
+	background-color: #FFF;
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+	z-index: 100;
+}
+
+.logo {
+	width: 60px;
+	height: 60px;
+	object-fit: cover;
+	margin-left: 3em;
+	position: absolute;
+}
+
+nav ul {
+	float: right;
+	margin-right: 25px;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 18px 5px;
+}
+
+nav ul li i {
+	color: #B3E5FC;
+	margin-top: 1px;
+}
+
+nav ul li a {
+	color: #000;
+	font-size: 14px;
+	font-family: Sunflower, cursive;
+	padding: 7px 13px;
+	border-radius: 8px;
+}
+
+.checkbtn {
+	font-size: 30px;
+	color: #000;
+	float: right;
+	margin-right: 30px;
+	margin-top: 18px;
+	cursor: pointer;
+	display: none;
+}
+
+#check {
+	display: none;
+}
+
+@media (max-width: 952px) {
+	.logo {
+		width: 60px;
+		height: 60px;
+		padding-left: 0px;
+		margin-left: 0px;
+		align-items: center;
+		object-fit: scale-down;
+		position: absolute;
+	}
+
+	nav ul li a{
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 858px) {
+	.checkbtn {
+		display: block;
+		padding-right: 20px;
+	}
+
+	ul {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background-color: #E1F5FE;
+		top: 60px;
+		left: -100%;
+		text-align: center;
+		transition: all .8s;
+	}
+
+	nav ul li {
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+		border-top: 3px solid #ADD8E6;
+		border-bottom: 3px solid #ADD8E6;
+	}
+
+	nav ul li a {
+		font-size: 20px;
+	}
+
+	li a:hover{
+		color: #B3E5FC;
+		transition: color .8s;
+	}
+
+	#check:checked ~ ul {
+		left: 0;
+	}
+}
+
+nav ul li a:hover {
+	color: #B3E5FC;
+	transition: color .8s;
+}
+
+#ContactMe1 {
+	padding-top: 10px 15px;
+	color: #E1F5FE;
+	font-size: 14px;
+	font-family: Public Sans, sans-serif;
+	background-color: #00B0FF;
+	border-radius: 8px;
+}
+
+	#ContactMe1:hover {
+	color: #fff;
+	background-color: #B3E5FC;
+	transition: color .8s,background .8s;
+	}
+/* --------------HEADER-------------- */
+
+/* --------------HOME-------------- */
+.welcome {
+	padding-top: 60px;
+}
+
+.wallpaper {
+	width: 100%;
+	background-position: center;
+	object-fit: cover;
+	min-width: 100%;
+	z-index: -1;
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.title {
+	font-size: 36px;
+	width: 45%;
+	display: block;
+	line-height: 55px;
+	position: absolute;
+	color: #FFF;
+	font-size: 42px;
+	padding-top: 200px;
+	padding-left: 48px;
+}
+
+.subtitle {
+	display: 18px;
+	width: 45%;
+	display: block;
+	position: absolute;
+	color: #FFF;
+	font-size: 18px;
+	padding-left: 57px;
+	padding-top: 415px;
+}
+
+.about {
+	text-align: center;
+	align-items: center;
+}
+
+.aboutcompany-title {
+	font-size: 24px;
+	font-weight: lighter;
+	color: #000;
+	font-family: Raleway, sans-serif;
+	text-align: center;
+	padding-top: 120px;
+}
+
+.aboutcompany-subtitle {
+	font-size: 15px;
+	font-weight: lighter;
+	color: #000;
+	font-family: Raleway, sans-serif;
+	text-align: center;
+	padding-top: 18px;
+}
+
+.fastsupport {
+	margin-top: 50px;
+	display: inline-block;
+	padding: 3px 5px;
+	width: 350px;
+	height: 250px;
+}
+
+.aboutcompany-icon-1 {
+	color: #000;
+	font-size: 40px;
+	text-align: center;
+	padding-top: 14px;
+}
+
+.aboutcompany-feature-1 {
+	font-size: 18px;
+	font-weight: lighter;
+	color: #000;
+	font-family: Raleway, sans-serif;
+}
+
+.aboutcompany-feature-1-description {
+	font-size: 15px;
+	font-weight: lighter;
+	color: #000;
+	font-family: Raleway, sans-serif;
+	text-align: center;
+}
+
+.passion {
+	margin-top: 50px;
+	display: inline-block;
+	padding: 3px 5px;
+	width: 350px;
+	height: 250px;
+	vertical-align: top;
+}
+
+.aboutcompany-icon-2 {
+	color: #000;
+	font-size: 40px;
+	padding-top: 14px;
+}
+
+.aboutcompany-feature-2 {
+	font-size: 18px;
+	font-weight: lighter;
+	color: #000;
+	font-family: Raleway, sans-serif;
+}
+
+.aboutcompany-feature-2-description {
+	font-size: 15px;
+	font-weight: lighter;
+	color: #000;
+	font-family: Raleway, sans-serif;
+	text-align: center;
+}
+
+.responsive {
+	margin-top: 50px;
+	display: inline-block;
+	padding: 3px 5px;
+	width: 350px;
+	height: 250px;
+	vertical-align: top;
+}
+
+.aboutcompany-icon-3 {
+	color: #000;
+	font-size: 40px;
+	padding-top: 16px;
+}
+
+.aboutcompany-feature-3 {
+	font-size: 18px;
+	font-weight: lighter;
+	color: #000;
+	font-family: Raleway, sans-serif;
+}
+
+.aboutcompany-feature-3-description {
+	font-size: 15px;
+	font-weight: lighter;
+	color: #000;
+	font-family: Raleway, sans-serif;
+	text-align: center;
+}
+
+.ourtemplates {
+	width: 100%;
+	height: 630px;
+	background-color: #F1F1F1;
+	padding-top: 125px;
+	text-align: left;
+	font-family: Raleway, sans-serif;
+	margin-bottom: 420px;
+}
+
+.ourtemplates-title {
+	font-size: 24px;
+	font-weight: lighter;
+	padding-left: 1.9em;
+	padding-top: 60px;
+}
+
+.ourtemplates-description {
+	font-size: 15px;
+	font-weight: lighter;
+	padding-left: 3em;
+}
+
+.template-example {
+	object-fit: cover;
+	float: right;
+	height: 380px;
+	margin-right: 85px;
+	border-radius: 8px;
+}
+
+.button-1 {
+	font-weight: lighter;
+	font-size: 15px;
+	margin-top: 20px;
+	margin-left: 3em;
+	color: #FFF;
+	background-color: #000;
+	padding: 8px 16px;
+	font-family: Raleway, sans-serif;
+}
+
+@media only screen and (max-width: 858px) {
+
+.welcome {
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	}
+
+.title {
+	font-size: 32px;
+	text-align: center;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: auto;
+	padding-right: auto;
+	}
+
+.subtitle {
+	font-size: 14px;
+	text-align: center;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: auto;
+	padding-right: auto;
+	}
+
+.wallpaper {
+	width: 100%; 
+	object-fit: cover;
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+	}
+
+.about {
+	display: block;
+	width: 100%;
+	}
+
+.aboutcompany-title {
+	width: 100%;
+	font-size: 18px;
+	}
+
+.aboutcompany-subtitle {
+	width: 100%;
+	font-size: 14px;
+	}
+
+.ourtemplates {
+	display: block;
+	width: 100%;
+	text-align: center;
+	height: 850px;
+	}
+
+.template-example {
+	width: 100%;
+	object-fit: cover;
+	float: none;
+	margin-right: 0;
+	}
+
+.ourtemplates-title {
+	padding-left: auto;
+	padding-right: 15px;
+	}
+
+.ourtemplates-description {
+	padding-left: auto;
+	padding-right: 15px;
+	}
+}
+
+/* --------------HOME-------------- */
