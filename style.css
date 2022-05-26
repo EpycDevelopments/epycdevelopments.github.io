@@ -200,10 +200,6 @@ nav ul li a:hover {
 		object-fit: scale-down;
 		position: absolute;
 	}
-
-	nav ul li a{
-		font-size: 14px;
-	}
 }
 
 @media (max-width: 858px) {
@@ -224,7 +220,7 @@ nav ul li a:hover {
 
 	nav ul li {
 		display: block;
-		margin: 80px 2px;
+		margin: 55px 2px;
 		line-height: 30px;
 	}
 
